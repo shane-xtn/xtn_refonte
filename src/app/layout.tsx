@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Invertase - Transform Developer Experience",
-  description: "Invertase transforms developer experience. Expert engineering, open-source tools, and SDK development services. Boost productivity and build better software.",
+  title: "Extension Interactive",
+  description: "Extension Interactive - Where your dreams come to life digitaly",
   icons: {
-    icon: "favicon.ico",
+    icon: "/img/favicon.ico",
   },
 };
 
