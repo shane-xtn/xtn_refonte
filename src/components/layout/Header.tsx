@@ -29,71 +29,31 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
-          <div className="relative group px-3 py-2">
-            <button className="flex items-center text-sm text-muted-foreground hover:text-foreground">
-              Services <ChevronDown size={16} className="ml-1" />
-            </button>
-            <div className="absolute left-0 mt-2 w-48 bg-card rounded-md shadow-lg border border-border hidden group-hover:block">
-              <Link href="/sdk" className="block px-4 py-2 text-sm hover:bg-secondary">
-                SDK development & maintenance
-              </Link>
-              <Link href="/cross-platform" className="block px-4 py-2 text-sm hover:bg-secondary">
-                Cross-platform development
-              </Link>
-            </div>
-          </div>
-          <Link href="/open-source" className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">
-            Open source
-          </Link>
-          <div className="relative group px-3 py-2">
-            <button className="flex items-center text-sm text-muted-foreground hover:text-foreground">
-              Products <ChevronDown size={16} className="ml-1" />
-            </button>
-            <div className="absolute left-0 mt-2 w-48 bg-card rounded-md shadow-lg border border-border hidden group-hover:block">
-              <a href="https://globe.dev" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-secondary">
-                Globe.dev
-              </a>
-              <a href="https://zapp.run" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-secondary">
-                Zapp.run
-              </a>
-              <a href="https://docs.page" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-secondary">
-                Docs.page
-              </a>
-            </div>
-          </div>
-          <Link href="/blog" className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">
-            Blog
-          </Link>
-          <div className="relative group px-3 py-2">
-            <button className="flex items-center text-sm text-muted-foreground hover:text-foreground">
-              Company <ChevronDown size={16} className="ml-1" />
-            </button>
-            <div className="absolute left-0 mt-2 w-48 bg-card rounded-md shadow-lg border border-border hidden group-hover:block">
-              <Link href="/about-us" className="block px-4 py-2 text-sm hover:bg-secondary">
-                About us
-              </Link>
-              <Link href="/careers" className="block px-4 py-2 text-sm hover:bg-secondary">
-                Careers
-              </Link>
-            </div>
-          </div>
-        </nav>
-
-        {/* Action Buttons */}
-        <div className="hidden md:flex items-center">
-          <a
-            href="https://github.com/invertase"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center mr-4 text-sm text-muted-foreground hover:text-foreground"
+          <Link
+            href="#about"
+            className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
           >
-            <span className="mr-1">Star us on GitHub</span>
-            <span className="bg-secondary rounded-full px-2 py-0.5 text-xs">32.8k</span>
-          </a>
-          <Link href="/contact" className="px-4 py-2 text-sm bg-white text-black rounded-md hover:bg-gray-200 transition">
-            Get in touch
+            About
           </Link>
-        </div>
+          <Link
+            href="#agency"
+            className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+          >
+            Agency
+          </Link>
+          <Link
+            href="#partners"
+            className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+          >
+            Partners
+          </Link>{" "}
+          <Link
+            href="#services"
+            className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+          >
+            Services
+          </Link>
+        </nav>
 
         {/* Mobile Menu Button */}
         <button
@@ -188,25 +148,6 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 Careers
-              </Link>
-            </div>
-
-            <div className="pt-4 flex flex-col space-y-3">
-              <a
-                href="https://github.com/invertase"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-sm text-muted-foreground hover:text-foreground"
-              >
-                <span className="mr-1">Star us on GitHub</span>
-                <span className="bg-secondary rounded-full px-2 py-0.5 text-xs">32.8k</span>
-              </a>
-              <Link
-                href="/contact"
-                className="px-4 py-2 text-sm bg-white text-black rounded-md hover:bg-gray-200 transition text-center"
-                onClick={toggleMenu}
-              >
-                Get in touch
               </Link>
             </div>
           </div>
