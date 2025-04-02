@@ -1,24 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
-  trailingSlash: true,
-  eslint: {
-    // we use biome for linting
-    ignoreDuringBuilds: true,
-  },
-  images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "ext.same-assets.com",
-      },
-    ],
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export', // Ensures Next.js exports static files
+  basePath: "/xtn_refonte", // Replace with your GitHub repo name
+  assetPrefix: "/xtn_refonte/",
 };
 
 module.exports = nextConfig;
